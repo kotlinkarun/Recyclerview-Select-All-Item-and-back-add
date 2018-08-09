@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:padding="5dp"
+                android:id="@+id/add_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_weight="1.9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Karun Singh"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:id="@+id/check"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_width="0dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/t"
+        android:layout_marginStart="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4"/>
+
+</RelativeLayout>
